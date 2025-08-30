@@ -1,0 +1,18 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "prettier.configPath": ".prettierrc",
+
+  "problems.visibility": false,
+
+  "trailing-spaces.trimOnSave": true,
+  "trailing-spaces.includeEmptyLines": true,
+  "trailing-spaces.highlightCurrentLine": true,
+
+  "fiveServer.host": "localhost", // 127.0.0.1
+  "fiveServer.port": 8080,
+  "fiveServer.root": "~"
+}
