@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Comapible" content="ie=edge" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <title>Admin Dashboard</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Yush Pvt Ltd</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"> Dropdown </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-2">
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Add employee</li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="container my-2">
+      <h5 class="display-5">Add Employee</h3>
+    </div>
+
+    <div class="container my-2">
+      <div class="alert alert-info">
+        Backend is not implemented. Form submission will not add actual data.
+        <button class="btn-close float-end" data-bs-dismiss="alert"></button>
+      </div>
+    </div>
+
+    <form class="needs-validation" novalidate>
+      <div class="container my-2 gap-2 py-2 border rounded">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <label for="first_name" class="form-label">First Name</label>
+            <input id="first_name" type="text" class="form-control" required />
+            <span class="valid-feedback">First Name is Valid</span>
+            <span class="invalid-feedback">First Name is invalid.</span>
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="last_name" class="form-label">Last Name</label>
+            <input id="last_name" type="text" class="form-control" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+             <label for="email" class="form-label">Email Address</label>
+             <input type="email" id="email" class="form-control" required />
+             <p class="form-text">Use official email address only.</p>
+             <span class="valid-feedback">Email Address is valid</span>
+             <span class="invalid-feedback">Email Address should be entered and valid.</span>
+          </div>
+        </div>
+        <div class="row">
+          <p class="form-label">Gender</p>
+        </div>
+        <div class="row gap-2 px-2">
+          <div class="col-auto form-check">
+            <input type="radio" name="gender" id="gender_male" class="form-check-input" />
+            <label for="gender_male" class="form-check-label">Male</label>
+          </div>
+          <div class="col-auto form-check">
+            <input type="radio" name="gender" id="gender_female" class="form-check-input" />
+            <label for="gender_female" class="form-check-label">Female</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="form-label">Department</p>
+            <select class="form-select">
+              <option selected>Fresher (No Department)</option>
+              <option>Engineering</option>
+              <option>sales</option>
+              <option>Support</option>
+              <option>HR</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <label for="address" class="form-label">Address</label>
+            <textarea id="address" class="form-control"></textarea>
+            <p class="form-text">Use residential address of the employee.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-auto">
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+          <div class="col-auto">
+            <button class="btn btn-secondary" type="reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation');
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach((form) => {
+        form.addEventListener(
+          'submit',
+          (event) => {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+
+            form.classList.add('was-validated');
+          },
+          false
+        );
+      });
+    </script>
+  </body>
+</html>

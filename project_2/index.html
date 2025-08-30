@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Comapible" content="ie=edge" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <title>Admin Dashboard</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Yush Pvt Ltd</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"> Dropdown </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-2">
+      <h5 class="display-5">Admin Dashboard</h3>
+    </div>
+
+    <div class="container my-2">
+      <div class="d-flex justify-content-end">
+        <a href="add_employee.html" class="btn btn-primary">Add new Employee</a>
+      </div>
+    </div>
+
+    <div class="container my-2">
+      <table class="table table-striped table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>S. No.</th>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Email ID</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>First Employee</td>
+            <td>Owner</td>
+            <td>owner@yush.dev</td>
+            <td>
+              <button class="btn btn-success btn-sm">Promote</button>
+              <button class="btn btn-danger btn-sm">Fire</button>
+              <button class="btn btn-secondary btn-sm dropdown-toggle" data-bs-toggle="dropdown">More</button>
+
+              <ul class="dropdown-menu">
+                <li><p>ABCD</p></li>
+                <li><a href="https://google.com">Google</a></li>
+                <li><a href="https://yush.dev">Yush</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Second Employee</td>
+            <td>Manager</td>
+            <td>manager@yush.dev</td>
+            <td>
+              <button class="btn btn-success btn-sm">Promote</button>
+              <button class="btn btn-danger btn-sm">Fire</button>
+              <button class="btn btn-secondary btn-sm dropdown-toggle" data-bs-toggle="dropdown">More</button>
+
+              <ul class="dropdown-menu">
+                <li><p>ABCD</p></li>
+                <li><a href="https://google.com">Google</a></li>
+                <li><a href="https://yush.dev">Yush</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Third Employee</td>
+            <td>Senior</td>
+            <td>senior@yush.dev</td>
+            <td>
+              <button class="btn btn-success btn-sm">Promote</button>
+              <button class="btn btn-danger btn-sm">Fire</button>
+              <button class="btn btn-secondary btn-sm dropdown-toggle" data-bs-toggle="dropdown">More</button>
+
+              <ul class="dropdown-menu">
+                <li><p>ABCD</p></li>
+                <li><a href="https://google.com">Google</a></li>
+                <li><a href="https://yush.dev">Yush</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Fourth Employee</td>
+            <td>Junior</td>
+            <td>junior@yush.dev</td>
+            <td>
+              <button class="btn btn-success btn-sm">Promote</button>
+              <button class="btn btn-danger btn-sm">Fire</button>
+              <button class="btn btn-secondary btn-sm dropdown-toggle" data-bs-toggle="dropdown">More</button>
+
+              <ul class="dropdown-menu">
+                <li><p>ABCD</p></li>
+                <li><a href="https://google.com">Google</a></li>
+                <li><a href="https://yush.dev">Yush</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Fifth Employee</td>
+            <td>Intern</td>
+            <td>intern@yush.dev</td>
+            <td>
+              <button class="btn btn-success btn-sm">Promote</button>
+              <button class="btn btn-danger btn-sm">Fire</button>
+              <button class="btn btn-secondary btn-sm dropdown-toggle" data-bs-toggle="dropdown">More</button>
+
+              <ul class="dropdown-menu">
+                <li><p>ABCD</p></li>
+                <li><a href="https://google.com">Google</a></li>
+                <li><a href="https://yush.dev">Yush</a></li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
